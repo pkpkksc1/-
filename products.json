@@ -1,0 +1,18 @@
+[
+  {
+    "name": "에어팟 프로 2",
+    "store": "쇼핑몰 A",
+    "price": 329000,
+    "shipping": 0,
+    "url": "https://example.com/product-a",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "name": "에어팟 프로 2",
+    "store": "쇼핑몰 B",
+    "price": 315000,
+    "shipping": 3000,
+    "url": "https://example.com/product-b",
+    "image": "https://via.placeholder.com/200"
+  }
+]
