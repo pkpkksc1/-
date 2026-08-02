@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가격비교</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>상품 가격비교</h1>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="상품명을 검색하세요"
+    >
+
+    <select id="sortSelect">
+      <option value="low">최종 가격 낮은 순</option>
+      <option value="high">최종 가격 높은 순</option>
+    </select>
+
+    <section id="productList"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
