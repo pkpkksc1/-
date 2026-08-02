@@ -1,18 +1,72 @@
 [
   {
-    "name": "에어팟 프로 2",
-    "store": "쇼핑몰 A",
-    "price": 329000,
-    "shipping": 0,
-    "url": "https://example.com/product-a",
-    "image": "https://via.placeholder.com/200"
+    "name": "생수",
+    "category": "음료",
+    "size": "550ml",
+    "hemaPrice": 2.5,
+    "rtMartPrice": 1.9
   },
   {
-    "name": "에어팟 프로 2",
-    "store": "쇼핑몰 B",
-    "price": 315000,
-    "shipping": 3000,
-    "url": "https://example.com/product-b",
-    "image": "https://via.placeholder.com/200"
+    "name": "우유",
+    "category": "유제품",
+    "size": "950ml",
+    "hemaPrice": 15.9,
+    "rtMartPrice": 13.8
+  },
+  {
+    "name": "계란",
+    "category": "계란",
+    "size": "10개",
+    "hemaPrice": 12.9,
+    "rtMartPrice": 11.9
+  },
+  {
+    "name": "감자",
+    "category": "채소",
+    "size": "500g",
+    "hemaPrice": 5.9,
+    "rtMartPrice": 4.8
+  },
+  {
+    "name": "양파",
+    "category": "채소",
+    "size": "1kg",
+    "hemaPrice": 8.9,
+    "rtMartPrice": 7.9
+  },
+  {
+    "name": "바나나",
+    "category": "과일",
+    "size": "500g",
+    "hemaPrice": 7.5,
+    "rtMartPrice": 6.9
+  },
+  {
+    "name": "오렌지주스",
+    "category": "음료",
+    "size": "1L",
+    "hemaPrice": 18.9,
+    "rtMartPrice": 19.9
+  },
+  {
+    "name": "닭다리",
+    "category": "육류",
+    "size": "500g",
+    "hemaPrice": 16.8,
+    "rtMartPrice": 15.9
+  },
+  {
+    "name": "라면",
+    "category": "가공식품",
+    "size": "5개입",
+    "hemaPrice": 19.9,
+    "rtMartPrice": 18.5
+  },
+  {
+    "name": "키친타월",
+    "category": "생활용품",
+    "size": "4롤",
+    "hemaPrice": 23.9,
+    "rtMartPrice": 25.9
   }
 ]
