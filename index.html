@@ -2,28 +2,114 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>가격비교</title>
-  <link rel="stylesheet" href="style.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>허마 · 다룬파 가격비교</title>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <p class="logo">마트 가격비교</p>
+
+      <h1>허마 · 다룬파 가격비교</h1>
+
+      <p class="description">
+        같은 상품의 허마와 다룬파 가격을 한눈에 비교해 보세요.
+      </p>
+    </div>
+  </header>
+
   <main class="container">
-    <h1>상품 가격비교</h1>
+    <section class="control-panel">
+      <label for="searchInput">상품 검색</label>
 
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="상품명을 검색하세요"
-    >
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="예: 우유, 생수, 계란"
+        autocomplete="off"
+      >
 
-    <select id="sortSelect">
-      <option value="low">최종 가격 낮은 순</option>
-      <option value="high">최종 가격 높은 순</option>
-    </select>
+      <div class="select-group">
+        <div>
+          <label for="categorySelect">카테고리</label>
 
-    <section id="productList"></section>
+          <select id="categorySelect">
+            <option value="all">전체 카테고리</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="sortSelect">정렬</label>
+
+          <select id="sortSelect">
+            <option value="name">상품명 순</option>
+            <option value="low">최저가 낮은 순</option>
+            <option value="difference">
+              가격 차이 큰 순
+            </option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary" aria-live="polite">
+      <div class="summary-card">
+        <span>비교 상품</span>
+        <strong id="productCount">0개</strong>
+      </div>
+
+      <div class="summary-card hema-summary">
+        <span>허마 최저가</span>
+        <strong id="hemaWinCount">0개</strong>
+      </div>
+
+      <div class="summary-card rt-summary">
+        <span>다룬파 최저가</span>
+        <strong id="rtMartWinCount">0개</strong>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="section-heading">
+        <h2>상품별 가격</h2>
+        <p id="resultMessage">상품 정보를 불러오는 중입니다.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>상품</th>
+              <th>규격</th>
+              <th>허마</th>
+              <th>다룬파</th>
+              <th>최저가</th>
+              <th>가격 차이</th>
+            </tr>
+          </thead>
+
+          <tbody id="comparisonBody"></tbody>
+        </table>
+      </div>
+
+      <div id="cardList" class="card-list"></div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>
+      가격은 직접 입력한 정보이며 실제 판매가격과 다를 수 있습니다.
+    </p>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
